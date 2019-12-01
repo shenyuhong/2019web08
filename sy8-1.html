@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+		h3,p{
+			text-align:center
+		}
+			form{
+				width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+				background-color: #515151;
+				display: block;
+				margin-top: 0em;
+			}
+			body{
+				color: #fff;
+			}
+			fieldset{
+				width:520px;
+				padding:20px;
+				margin-bottom:25px;
+			}
+			body,h2,fieldset{
+				display:block;
+				border:2px groove threedface;
+			}
+			legend{
+				display:block;
+				border:none;
+			}
+			table{
+				display:table;
+				border-collapse:separate;
+				border-spacing:2px;
+				border-color:grey;
+			}
+			td{
+				height:50px;
+			}
+			td,th{
+				display:table-cell;
+				vertical-align:inherit
+			}
+			[type="text"]{
+				width:140px;
+				height:25px;
+			}
+			input{
+				background-color:#FFF;
+				border:2px inset;
+			}
+			select{
+				width:170px;
+				height:25px;
+			}
+			input[type="submit" i],input[type="reset" i]{
+				text-align:center;
+				cursor:default;
+				color:bottontext;
+				background-color:buttonface;
+				box-sizing:border-box;
+				padding:2px 6px3px;
+				border:2px outset buttonface;
+			}
+		</style>
+	</head>
+	<body>
+	<form>
+		<h3>增加快递信息</h3>
+		<fieldset>
+			<legend>发货单</legend>
+			<table>
+			<tbody>
+				<tr>
+				<td>发货人：</td>
+				<td><input type="text" name="fhr"> </td>
+				<td>地址：</td>
+				<td><input type="text" name="dz"></td>
+			</tr>
+			<tr>
+				<td>电话：</td>
+				<td><input type="text" name="dh"></td>
+				<td>邮编：</td>
+				<td><input type="text" name="yb"></td>
+			</tr>
+			</tbody>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>收货单</legend>
+			<table>
+			<tbody>
+				<tr>
+					<td>收货人：</td>
+					<td><input type="text" name="shr"></td>
+					<td>地址：</td>
+					<td><input type="text" name="dz"></td>
+				</tr>
+				<tr>
+					<td>电话：</td>
+					<td><input type="text" name="dh"></td>
+					<td>邮编：</td>
+					<td><input type="text" name="yb"></td>
+					</tr>
+				<tr>
+					<td>地区：</td>
+					<td colspan="3"><select>
+					<option>北京</option>
+						<option>天津</option>
+						<option>上海</option>
+						<option>广东</option>
+						<option>浙江</option>
+					</select></td>
+					
+				</tr>
+				<tr>
+					<td>包装：</td>
+					<td colspan="3">
+					<input type="checkbox" name="pak" value="paperbox">纸箱
+					<input type="checkbox" name="pak" value="woodbox">木箱
+					<input type="checkbox" name="pak" value="pak">快递袋
+					<input type="checkbox" name="pak" value="other">其他
+					</td>
+				</tr>
+				<tr>
+					<td>付款方式：</td>
+					<td colspan="3">
+						<input type="radio" name="payment" value="cash">现金
+						<input type="radio" name="payment" value="alipay">支付宝
+						<input type="radio" name="payment" value="online">网银
+						<input type="radio" name="payment" value="ATM">ATM
+					</td>
+				</tr>
+				
+			</tbody>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>货物信息</legend>
+			<table>
+			<tbody>
+				<tr>
+					<td>货物名称：</td>
+					<td colspan="3"><input type="text" name="hwmc"></td>
+				</tr>
+				<tr>
+					<td>数量：</td>
+					<td ><input type="text" name="sl"></td>
+					<td>重量：</td>
+					<td><input type="text" name="zl"></td>
+					<td>发货时间：</td>
+					<td><input type="text" name="fhsj"></td>
+				</tr>
+			</tbody>
+			</table>
+		</fieldset>
+		<p>
+		  <input type="submit" value="确定">
+		  <input type="reset" value="取消">
+		</p>
+	</form>
+		
+		
+	</body>
+</html>
